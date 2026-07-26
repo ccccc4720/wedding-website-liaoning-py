@@ -1,7 +1,9 @@
-# 中国婚礼网站包（小院婚礼 v9）
+# 中国婚礼网站包（小院婚礼 v11）
 
 ## 本版更新
 
+- 在“婚礼信息”区新增“下载 PDF”按钮，宾客可直接下载三页手机直式《婚礼程序与喜宴菜单》。
+- PDF 文件路径：`assets/downloads/wedding-invitation-program-menu.pdf`。
 - 修复“地图导航”场地图在手机上被裁切、只看到后两张的问题。
 - 场地实景、仪式区参考与迎宾区参考改为三张独立响应式图片；手机端会完整显示全部三张。
 
@@ -31,11 +33,13 @@
 - `assets/images`：主视觉与场地图片。
 - `assets/gallery`：婚礼相册。
 - `assets/marquee`：“邀请你来”照片及影片轮播。
+- `assets/downloads/wedding-invitation-program-menu.pdf`：可由网站按钮直接下载的婚礼程序与菜单。
 - `MICROSOFT_FORMS_SETUP_GUIDE_ZH_TW.md`：Microsoft Forms 管理与检查说明。
 - `MICROSOFT_FORMS_QUESTION_TEMPLATE_ZH_CN.txt`：回执题目备份。
 
 ## 上线前检查
 
+0. 点击“下载 PDF”，确认可打开或保存三页婚礼程序与菜单。
 1. 使用手机和电脑各打开一次网站。
 2. 确认回执表单可以在页面内载入。
 3. 点击备用按钮，确认能在新页面打开同一份表单。

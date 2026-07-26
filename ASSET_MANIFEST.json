@@ -56,7 +56,7 @@
     "slide-011.jpg"
   ],
   "extraGalleryCount": 11,
-  "version": "v9",
+  "version": "v11",
   "rsvpProvider": "Microsoft Forms",
   "documentation": [
     "MICROSOFT_FORMS_SETUP_GUIDE_ZH_TW.md",
@@ -65,12 +65,14 @@
   "venue": "responsive three-photo gallery",
   "eventStyle": "小院婚礼",
   "websiteProgrammeSection": false,
-  "rsvpMode": "embedded iframe with external-link fallback",
+  "rsvpMode": "desktop embedded iframe; mobile external-link button",
   "rsvpPublicUrl": "https://forms.cloud.microsoft/r/uDUBnBgJ24",
   "rsvpEmbedded": true,
   "venueGallery": [
     "assets/images/venue-actual.jpg",
     "assets/images/venue-ceremony-concept.jpg",
     "assets/images/venue-welcome-concept.jpg"
-  ]
+  ],
+  "programmePdf": "assets/downloads/wedding-invitation-program-menu.pdf",
+  "programmePdfDownloadButton": true
 }
