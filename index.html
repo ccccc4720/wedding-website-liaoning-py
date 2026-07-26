@@ -112,12 +112,17 @@
     .btn-secondary{background:#fff;color:var(--accent);border:1px solid rgba(178,58,58,.18);box-shadow:var(--shadow-soft)}
     .rsvp-embed-wrap{padding:12px;background:linear-gradient(180deg,#fffdf9,#fff8ef)}
     .rsvp-embed-frame{display:block;width:100%;height:1060px;border:0;border-radius:16px;background:#fff;box-shadow:inset 0 0 0 1px rgba(90,70,55,.06)}
+    .rsvp-mobile-card{display:none;padding:28px 18px 30px;text-align:center;background:linear-gradient(180deg,#fffdf9,#fff8ef)}
+    .rsvp-mobile-icon{width:62px;height:62px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;background:rgba(194,76,76,.10);color:var(--accent);font-size:29px}
+    .rsvp-mobile-card h3{margin:0 0 8px;font-size:20px}
+    .rsvp-mobile-card p{max-width:360px;margin:0 auto 18px;color:var(--muted);font-size:14px;line-height:1.75}
+    .rsvp-mobile-card .btn{width:100%;max-width:360px;min-height:50px}
     .rsvp-fallback{padding:14px 18px 18px;background:#fff8ef;border-top:1px solid rgba(90,70,55,.08)}
     .rsvp-fallback p{margin:0;color:var(--muted);font-size:13px;line-height:1.7}
-    @media(max-width:640px){
-      .rsvp-embed-wrap{padding:6px}
-      .rsvp-embed-frame{height:1240px;border-radius:13px}
-      .rsvp-fallback{padding:13px 14px 16px}
+    @media(max-width:760px){
+      .rsvp-embed-wrap{display:none}
+      .rsvp-mobile-card{display:block}
+      .rsvp-fallback{display:none}
     }
     .traffic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:16px}
     .traffic-card{background:linear-gradient(180deg,rgba(255,255,255,.92),rgba(250,245,238,.92));border:1px solid rgba(0,0,0,.06);border-radius:18px;padding:16px;box-shadow:var(--shadow-soft)}
@@ -277,7 +282,7 @@
         <div class="section-head">
           <span class="section-tag">RSVP CARD</span>
           <h2>出席回复</h2>
-          <p class="section-desc">请直接在下方填写 Microsoft Forms 回执，方便我们安排座位、餐饮与接待。</p>
+          <p class="section-desc">电脑可直接在下方填写；手机请点击按钮以完整页面打开回执，避免版面偏移。</p>
         </div>
         <div class="rsvp-shell">
           <div class="rsvp-top">
@@ -293,6 +298,12 @@
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen>
             </iframe>
+          </div>
+          <div class="rsvp-mobile-card">
+            <div class="rsvp-mobile-icon" aria-hidden="true">✓</div>
+            <h3>填写婚礼回执</h3>
+            <p>手机内嵌 Microsoft Forms 容易出现放大或版面偏移。请点击按钮以完整页面打开，填写会更顺畅。</p>
+            <a class="btn btn-primary" href="https://forms.cloud.microsoft/r/uDUBnBgJ24" target="_blank" rel="noopener noreferrer">打开回执表单</a>
           </div>
           <div class="rsvp-fallback">
             <p>若表单未显示或载入较慢，请点击下方按钮，在新页面中填写。</p>
